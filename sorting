@@ -1,0 +1,15 @@
+# sorting and organizing
+
+beatles=["here", "comes", "the", "sun"]
+print(beatles)
+beatles.sort()   #from A to Z
+print(beatles)
+
+beatles.reverse()   #from Z to A
+print(beatles)
+
+beatles.sort(reverse = True) #from Z to A
+print(beatles)
+
+nums=[2,10,40,67,100]   #sort works only with string, not numbers
+print(nums.sort())
