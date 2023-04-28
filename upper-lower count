@@ -1,0 +1,14 @@
+name="anIKa"
+count=0
+for i in name:
+  if i.islower():
+    count=count+1
+print(count, 'lowercase letters')
+
+
+name="anIKa"
+count=0
+for i in name:
+  if i.isupper():
+    count=count+1
+print(count, 'uppercase letters')
