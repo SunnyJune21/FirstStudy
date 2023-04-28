@@ -1,0 +1,20 @@
+# drink menu
+
+print("***Coffee menu***")
+print("1. Espresso") 
+print("2. Cappuccino")
+print("3. Latte\n******************")
+
+choice=int(input("Please select a drink for the menu: "))
+
+while choice not in range(1,4):
+  print("This option is not on the menu. Please make another choice.")
+  choice=int(input("Please select a drink for the menu: "))
+if choice==1:
+  print("You chose Espresso. Ingredients are: pure Arabica coffee beans")
+elif choice==2:
+  print("YOu chose Cappuccino. Ingredients are: pure Arabica coffee beans, 2% milk")
+elif choice==3:
+  print("You chose Latte. Ingredients are: pure Arabica coffee beans, 3% milk")
+
+print("Thank you for making a choice!")
