@@ -1,0 +1,19 @@
+word="APPLES"
+print("Guess the word with", len(word), "letters")
+print("_ _ _ _ _ _")
+tries=3
+correctletters=0
+
+while tries>0:
+  tries-=1
+  guess=input("Guess a letter: ")
+  guess=guess.upper()
+  if guess in word:
+    print("Well done.", guess, "is in the word")
+    correctletters+=1
+  else:
+    print(guess, "is not in the word. You have", tries, "guesses left")
+    if tries==0:
+      print("Looks like you just lost. the word was", word)
+
+print("You guessed", correctletters, "letters.")
